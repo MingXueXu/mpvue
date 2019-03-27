@@ -1,3 +1,4 @@
 {"usingComponents": {
-    "i-button": "../../../static/dist/button/index"
+    "i-button": "../../../static/dist/button/index",
+    "input": "../../../static/dist/input/index"
 }}

@@ -1,9 +1,6 @@
 <template>
 <div>
-  <div>
-    <i-button type="primary" bind:click="handleClick">这是一个按钮</i-button>
-    <ul><li>aaaaaaaaaaaaaa</li><li>aaaaaaaaaaaaaa</li><li>aaaaaaaaaaaaaa</li><li>aaaaaaaaaaaaaa</li></ul>
-  </div>
+  <input placeholder="这是一个可以自动聚焦的input" auto-focus />
   </div>
 </template>
 
