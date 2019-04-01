@@ -18,7 +18,7 @@
     "borderStyle": "white",
 
     "list": [{
-      "text": "111111",
+      "text": "首页",
       "pagePath": "pages/index/main",
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"

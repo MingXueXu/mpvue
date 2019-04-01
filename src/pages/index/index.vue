@@ -1,35 +1,54 @@
 <template>
-  <div @click="clickHandle">
-
-    <div class="userinfo" @click="bindViewTap">
-      <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
-      <img class="userinfo-avatar" src="/static/images/user.png" background-size="cover" />
-
-      <div class="userinfo-nickname">
-        <card :text="userInfo.nickName"></card>
-      </div>
-    </div>
-
-    <div class="usermotto">
-      <div class="user-motto">
-        <card :text="motto"></card>
-      </div>
-    </div>
-
-    <form class="form-container">
-      <input type="text" class="form-control" :value="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a>
-
-    <div class="all">
-        <div class="left">
-        </div>
-        <div class="right">
-        </div>
-    </div>
+  <div>
+     <i-notice-bar icon="systemprompt" loop>
+    今日新书：钱钟书——《围城》
+    </i-notice-bar>
+     <view class="userinfo">
+    <view class="userinfo-avatar">
+    <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <open-data type="userNickName"></open-data>
+    </view>
+    <i-grid i-class="no-border">
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/1.png" />
+        </i-grid-icon>
+        <i-grid-label>我的书架</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/2.png" />
+        </i-grid-icon>
+        <i-grid-label>订阅期刊</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/3.png" />
+        </i-grid-icon>
+        <i-grid-label>在线预订</i-grid-label>
+    </i-grid-item>
+</i-grid>
+<i-grid i-class="no-border">
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/1.png" />
+        </i-grid-icon>
+        <i-grid-label>我的书架</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/2.png" />
+        </i-grid-icon>
+        <i-grid-label>订阅期刊</i-grid-label>
+    </i-grid-item>
+    <i-grid-item i-class="no-border">
+        <i-grid-icon>
+            <image src="/static/grid/3.png" />
+        </i-grid-icon>
+        <i-grid-label>在线预订</i-grid-label>
+    </i-grid-item>
+</i-grid>
   </div>
 </template>
 
@@ -73,54 +92,28 @@ export default {
 </script>
 
 <style scoped>
+div >>> .no-border {
+  border-width: 0pt;
+}
 .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+position: relative;
+width: 750rpx;
+height: 320rpx;
+color: #666;
+display: flex;
+flex-direction: column;
+align-items: center;
 }
-
+ 
 .userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-.all{
-  width:7.5rem;
-  height:1rem;
-  background-color:blue;
-}
-.all:after{
-  display:block;
-  content:'';
-  clear:both;
-}
-.left{
-  float:left;
-  width:3rem;
-  height:1rem;
-  background-color:red;
-}
-
-.right{
-  float:left;
-  width:4.5rem;
-  height:1rem;
-  background-color:green;
+overflow:hidden;
+display: block;
+width: 160rpx;
+height: 160rpx;
+margin: 20rpx;
+margin-top: 50rpx;
+border-radius: 50%;
+border: 2px solid #fff;
+box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 </style>
