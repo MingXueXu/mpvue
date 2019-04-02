@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/index/main",
-    "pages/logs/main",
-    "pages/counter/main",
+    "pages/order/main",
+    "pages/set/main",
     "pages/mine/main"
   ],
   "window": {
@@ -23,14 +23,19 @@
       "iconPath": "static/tabs/home.png",
       "selectedIconPath": "static/tabs/home-active.png"
     }, {
-      "text": "订单",
-      "pagePath": "pages/logs/main",
+      "text": "在线预约",
+      "pagePath": "pages/order/main",
       "iconPath": "static/tabs/orders.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }, {
-      "text": "订单2",
+      "text": "我的图书馆",
       "pagePath": "pages/mine/main",
-      "iconPath": "static/tabs/orders.png",
+      "iconPath": "static/tabs/我的.png",
+      "selectedIconPath": "static/tabs/orders-active.png"
+    }, {
+      "text": "设置",
+      "pagePath": "pages/set/main",
+      "iconPath": "static/tabs/设置.png",
       "selectedIconPath": "static/tabs/orders-active.png"
     }],
 
@@ -40,8 +45,8 @@
       "icon": "static/tabs/home.png",
       "activeIcon": "static/tabs/home-active.png"
     }, {
-      "name": "订单",
-      "pagePath": "pages/logs/main",
+      "name": "在线预约",
+      "pagePath": "pages/order/main",
       "icon": "static/tabs/orders.png",
       "activeIcon": "static/tabs/orders-active.png"
     }],
