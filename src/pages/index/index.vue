@@ -1,19 +1,20 @@
 <template>
   <div>
      <i-notice-bar icon="systemprompt" loop>
-    今日新书：钱钟书——《围城》
+    {{notice}}新书：钱钟书——《围城》
     </i-notice-bar>
     <i-input type="text" title="搜索" placeholder="请输入书籍名称 关键字" />
     <view class="userinfo">
-    <view class="userinfo-avatar">
+  <view class="userinfo-avatar">
     <open-data type="userAvatarUrl"></open-data>
     </view>
     <open-data type="userNickName"></open-data>
-    </view>
+      </view>
     <i-row>
     <i-col span="12" i-class="col-class"><i-icon type="activity" size="28" color="#1296db" />签到中心</i-col>
-    <i-col span="12" i-class="col-class ">当前等级:LV3<i-icon type="collection" size="28" color="#1296db" /></i-col>
-</i-row>
+  
+    <i-col span="12" i-class="col-class1 ">当前等级:LV3<i-icon type="collection" size="15" color="#1296db"/><i-icon type="collection" size="15" color="#1296db"/><i-icon type="collection" size="15" color="#1296db"/></i-col>
+ </i-row>
     <i-grid i-class="no-border">
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -41,11 +42,23 @@
     </i-grid-item>
 </i-grid>
 <i-panel title="每日排行">
-      <view class="top-padding"></view>
+  <i-row>
+    <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
       <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
         <view slot="content">snow</view>
         <view slot="footer">NO.1</view>
-      </i-card>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+      <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">snow</view>
+        <view slot="footer">NO.2</view>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+      <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <view slot="content">snow</view>
+        <view slot="footer">NO.1</view>
+      </i-card></i-col>
+</i-row>
 </i-panel>
 <i-panel title="每日推荐">
       <view class="top-padding"></view>
@@ -70,6 +83,8 @@ import card from '@/components/card'
 export default {
   data () {
     return {
+      girds:['我的书架','我的期刊','我的收藏','我的活动'],
+      notice: '2019年4月3日',
       motto: 'Hello miniprograme',
       userInfo: {
         nickName: 'mpvue',
@@ -107,13 +122,15 @@ export default {
 div >>> .no-border {
   border-width: 0pt;
 }
-.top-padding {
-  padding-top: 50rpx;
+div >>> .top-padding {
+  width:200rpx;
+  float: left;
+
 }
 .userinfo {
 position: relative;
-width: 750rpx;
-height: 320rpx;
+width: 700rpx;
+height: 200rpx;
 color: #666;
 display: flex;
 flex-direction: column;
@@ -123,15 +140,19 @@ align-items: center;
 .userinfo-avatar {
 overflow:hidden;
 display: block;
-width: 160rpx;
-height: 160rpx;
-margin: 20rpx;
-margin-top: 50rpx;
+width: 120rpx;
+height: 120rpx;
+margin: 10rpx;
+/* margin-top: 50rpx; */
 border-radius: 50%;
 border: 2px solid #fff;
 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 div>>>.col-class{
   padding-right: 0pt;
+  float: left;
+}
+div>>>,col-class1{
+   float: right;
 }
 </style>
