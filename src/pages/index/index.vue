@@ -11,9 +11,9 @@
     <open-data type="userNickName"></open-data>
       </view>
     <i-row>
-    <i-col span="12" i-class="col-class"><i-icon type="activity" size="28" color="#1296db" />签到中心</i-col>
+    <i-col span="12" i-class="col-class"><i-card i-class="swidth" title="签到中心"></i-card></i-col>
   
-    <i-col span="12" i-class="col-class1 ">当前等级:LV3<i-icon type="collection" size="15" color="#1296db"/><i-icon type="collection" size="15" color="#1296db"/><i-icon type="collection" size="15" color="#1296db"/></i-col>
+    <i-col span="12" i-class="col-class1 "><i-card i-class="swidth" title="当前等级:LV3"></i-card></i-col>
  </i-row>
     <i-grid i-class="no-border">
     <i-grid-item i-class="no-border">
@@ -44,35 +44,60 @@
 <i-panel title="每日排行">
   <i-row>
     <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
-      <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 女孩 (1).png">
         <view slot="content">snow</view>
         <view slot="footer">NO.1</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
-      <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 女孩.png">
         <view slot="content">snow</view>
         <view slot="footer">NO.2</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
-      <i-card  i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 男孩.png">
         <view slot="content">snow</view>
         <view slot="footer">NO.1</view>
       </i-card></i-col>
 </i-row>
 </i-panel>
 <i-panel title="每日推荐">
-      <view class="top-padding"></view>
-      <i-card i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+     <i-row>
+    <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
         <view slot="content">明朝那些事</view>
         <view slot="footer">评分：9.5</view>
-      </i-card>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+        <view slot="content">追风筝的人</view>
+        <view slot="footer">评分：9.1</view>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+      <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+        <view slot="content">我们仨</view>
+        <view slot="footer">评分：9.0</view>
+      </i-card></i-col>
+</i-row>
 </i-panel>
 <i-panel title="图书导购">
       <view class="top-padding"></view>
-      <i-card i-class="top-padding" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+        <i-row>
+    <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
+      <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
         <view slot="content">内容不错</view>
         <view slot="footer">尾部内容</view>
-      </i-card>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+      <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+        <view slot="content">内容不错</view>
+        <view slot="footer">尾部内容</view>
+      </i-card></i-col>
+    <i-col span="8" i-class="col-class"><view class="top-padding"></view>
+     <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+        <view slot="content">内容不错</view>
+        <view slot="footer">尾部内容</view>
+      </i-card></i-col>
+</i-row>
       </i-panel>
    </div>
 </template>
@@ -151,8 +176,14 @@ box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 div>>>.col-class{
   padding-right: 0pt;
   float: left;
+  
 }
 div>>>,col-class1{
    float: right;
+}
+div>>>.swidth{
+  width:150px;
+  height:35px;
+  background-color: #BFEFFF
 }
 </style>

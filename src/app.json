@@ -31,12 +31,12 @@
       "text": "我的图书馆",
       "pagePath": "pages/mine/main",
       "iconPath": "static/tabs/我的.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "selectedIconPath": "static/tabs/我的-active.png"
     }, {
       "text": "设置",
       "pagePath": "pages/set/main",
       "iconPath": "static/tabs/设置.png",
-      "selectedIconPath": "static/tabs/orders-active.png"
+      "selectedIconPath": "static/tabs/设置 -active.png"
     }],
 
     "items": [{
