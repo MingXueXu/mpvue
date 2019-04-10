@@ -3,7 +3,7 @@
      <i-notice-bar icon="systemprompt" loop>
     {{notice}}新书：钱钟书——《围城》
     </i-notice-bar>
-    <i-input type="text" title="搜索" placeholder="请输入书籍名称 关键字" />
+    <i-input type="text" title="搜索" placeholder="请输入书籍名称 关键字" i-class ="Icolor"/>
     <view class="userinfo">
   <view class="userinfo-avatar">
     <open-data type="userAvatarUrl"></open-data>
@@ -12,7 +12,6 @@
       </view>
     <i-row>
     <i-col span="12" i-class="col-class"><i-card i-class="swidth" title="签到中心"></i-card></i-col>
-  
     <i-col span="12" i-class="col-class1 "><i-card i-class="swidth" title="当前等级:LV3"></i-card></i-col>
  </i-row>
     <i-grid i-class="no-border">
@@ -56,7 +55,7 @@
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
       <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 男孩.png">
         <view slot="content">snow</view>
-        <view slot="footer">NO.1</view>
+        <view slot="footer">NO.3</view>
       </i-card></i-col>
 </i-row>
 </i-panel>
@@ -104,11 +103,11 @@
 
 <script>
 import card from '@/components/card'
-
+const { $Message } = require('../../../static/dist/base/index');
 export default {
   data () {
     return {
-      girds:['我的书架','我的期刊','我的收藏','我的活动'],
+      // girds:['我的书架','我的期刊','我的收藏','我的活动'],
       notice: '2019年4月3日',
       motto: 'Hello miniprograme',
       userInfo: {
@@ -134,10 +133,20 @@ export default {
     clickHandle (ev) {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
-    }
+    },
+     handleSuccess () {
+        $Message({
+            content: '签到成功！',
+            type: 'success'
+        });
+    },
   },
 
   created () {
+    wx.cloud.callFunction({ name: 'user' }).then(
+      res => {console.log(res)}
+)
+
     // let app = getApp()
   }
 }
@@ -182,8 +191,14 @@ div>>>,col-class1{
    float: right;
 }
 div>>>.swidth{
-  width:150px;
+  width:155px;
   height:35px;
-  background-color: #BFEFFF
+  background-color: #FFFAF0
+}
+div>>>.Icolor{
+  border-color: #dddee1;
+  height: 10px;
+  border-style:solid;
+  border-width: 0.1ch
 }
 </style>
