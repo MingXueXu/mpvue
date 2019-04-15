@@ -1,19 +1,10 @@
 <template>
-  <div>
-      <swiper v-if="imgUrls.length > 0" indidator-dots="imgUrls.length > 1" >
-      <block v-for="(item, index) in imgUrls" :key="index" >
-        <swiper-item>
-          <image :src="item" mode="scaleToFill"></image>
-        </swiper-item>
-      </block>
-    </swiper>
-
-    <ul class="container log-list">
-      <li v-for="(log, index) in logs" :class="{ red: aa }" :key="index" class="log-item">
-        <card :text="(index + 1) + ' . ' + log"></card>
-      </li>
-    </ul>
-  </div>
+<div>
+ <i-tabs current="current" bindchange="handleChange">
+    <i-tab key="tab1" title="书籍预约"></i-tab>
+    <i-tab key="tab2" title="自习室预约"></i-tab>
+</i-tabs>
+</div>
 </template>
 
 <script>
@@ -27,6 +18,7 @@ export default {
 
   data () {
     return {
+      current: 'tab1',
       logs: [],
       imgUrls: [
         'http://mss.sankuai.com/v1/mss_51a7233366a4427fa6132a6ce72dbe54/newsPicture/05558951-de60-49fb-b674-dd906c8897a6',
@@ -35,7 +27,13 @@ export default {
       ]
     }
   },
-
+  methods:{
+       handleChange (detail) {
+        this.setData({
+            current: detail.key
+        });
+    },
+  },
   created () {
     let logs
     if (mpvuePlatform === 'my') {

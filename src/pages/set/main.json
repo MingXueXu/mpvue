@@ -15,6 +15,8 @@
         "i-row": "../../../static/dist/row/index",
          "i-col": "../../../static/dist/col/index",
          "i-icon": "../../../static/dist/icon/index",
-         "i-input": "../../../static/dist/input/index"
+         "i-input": "../../../static/dist/input/index",
+         "i-switch": "../../../static/dist/switch/index",
+         "i-swipeout": "../../../static/dist/swipeout/index"
     }
   }
