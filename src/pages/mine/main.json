@@ -1,4 +1,5 @@
-{"usingComponents": {
+{   "navigationBarTitleText": "图书馆地图",
+    "usingComponents": {
     "i-button": "../../../static/dist/button/index",
     "input": "../../../static/dist/input/index"
 }}

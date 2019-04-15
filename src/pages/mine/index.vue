@@ -1,6 +1,19 @@
 <template>
 <div>
-  <input placeholder="这是一个可以自动聚焦的input" auto-focus />
+  <map
+  id="map"
+  longitude="114.34094"
+  latitude="30.585014"
+  scale="16"
+  :controls="controls"
+  @controltap="controltap"
+  :markers="markers"
+  @markertap="markertap"
+  :polyline="polyline"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 500px;"
+></map>
   </div>
 </template>
 
@@ -10,11 +23,37 @@ import card from '@/components/card'
 export default {
   data () {
     return {
-      motto: 'Hello miniprograme',
-      userInfo: {
-        nickName: 'mpvue',
-        avatarUrl: 'http://mpvue.com/assets/logo.png'
-      }
+       markers: [{
+      iconPath: '/static/images/定位.png',
+      id: 0,
+      latitude: 30.584936,
+      longitude: 114.341102,
+      width: 50,
+      height: 50
+    }],
+    polyline: [{
+      points: [{
+        longitude: 114.340792,
+        latitude: 30.584971
+      }, {
+        longitude: 114.341385,
+        latitude: 30.585014
+      }],
+      color: '#FF0000DD',
+      width: 2,
+      dottedLine: true
+    }],
+    controls: [{
+      id: 1,
+      iconPath: '/static/images/全局搜索.png',
+      position: {
+        left: 0,
+        top: 300 - 50,
+        width: 50,
+        height: 50
+      },
+      clickable: true
+    }]
     }
   },
 
@@ -23,18 +62,16 @@ export default {
   },
 
   methods: {
-    bindViewTap () {
-      const url = '../logs/main'
-      if (mpvuePlatform === 'wx') {
-        mpvue.switchTab({ url })
-      } else {
-        mpvue.navigateTo({ url })
-      }
-    },
-    clickHandle (ev) {
-      console.log('clickHandle:', ev)
-      // throw {message: 'custom test'}
-    }
+   regionchange(e) {
+    console.log(e.type)
+  },
+  markertap(e) {
+    console.log(e.markerId)
+  },
+  controltap(e) {
+    console.log(e.controlId)
+  }
+    
   },
 
   created () {
@@ -44,54 +81,6 @@ export default {
 </script>
 
 <style scoped>
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
 
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 150px;
-}
-
-.form-control {
-  display: block;
-  padding: 0 12px;
-  margin-bottom: 5px;
-  border: 1px solid #ccc;
-}
-.all{
-  width:7.5rem;
-  height:1rem;
-  background-color:blue;
-}
-.all:after{
-  display:block;
-  content:'';
-  clear:both;
-}
-.left{
-  float:left;
-  width:3rem;
-  height:1rem;
-  background-color:red;
-}
-
-.right{
-  float:left;
-  width:4.5rem;
-  height:1rem;
-  background-color:green;
-}
 </style>

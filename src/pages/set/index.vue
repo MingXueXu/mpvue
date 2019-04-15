@@ -3,28 +3,28 @@
     <i-panel title="信息推送设置">
     <i-cell-group>
     <i-cell title="个性推荐">
-        <i-switch value="switch1" bind:change="onChange" slot="footer"></i-switch>
+        <i-switch :value="switch1" @change="onChange" slot="footer"></i-switch>
     </i-cell>
     <i-cell title="新书推送">
-        <i-switch value="switch1" bind:change="onChange" slot="footer"></i-switch>
+        <i-switch :value="switch1" @change="onChange" slot="footer"></i-switch>
     </i-cell>
     <i-cell title="期刊推送">
-        <i-switch value="switch1" bind:change="onChange" slot="footer"></i-switch>
+        <i-switch :value="switch1" @change="onChange" slot="footer"></i-switch>
     </i-cell>
     <i-cell title="活动推送">
-        <i-switch value="switch1" bind:change="onChange" slot="footer"></i-switch>
+        <i-switch :value="switch1" @change="onChange" slot="footer"></i-switch>
     </i-cell>
     </i-cell-group>
 </i-panel>
 <i-panel title="个人信息">
   <view class="i-swipeout-demo-title">和actionsheet联合使用</view>
-    <i-action-sheet visible="visible2" actions="actions2" show-cancel bind:cancel="handleCancel2" bind:click="handleClickItem2" mask-closable="false">
+    <i-action-sheet visible="visible2" :actions="actions2" show-cancel bind:cancel="handleCancel2" bind:click="handleClickItem2" mask-closable="false">
         <view slot="header" style="padding: 16px">
             <view style="color: #444;font-size: 16px">确定吗？</view>
             <text>删除后无法恢复哦</text>
         </view>
     </i-action-sheet>
-    <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="180" unclosable="true" toggle="toggle">
+    <i-swipeout  i-class="i-swipeout-demo-item" operateWidth="180" unclosable="true" :toggle="toggle">
         <view slot="content">
             <view class="i-swipeout-image">
                 <i-icon size="20" color="#FFFFFF" type="feedback_fill"></i-icon>
@@ -48,7 +48,8 @@
 
 
 export default {
-  data: {
+  data() {
+    return {
      switch1 : false,
      visible2: false,
         //小程序没有refs，所以只能用动态布尔值控制关闭
@@ -60,6 +61,7 @@ export default {
                 color: '#ed3f14'
             }
         ],
+    }
   },
   methods: {
     onChange(event){
