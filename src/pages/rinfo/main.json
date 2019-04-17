@@ -1,0 +1,23 @@
+{
+  "navigationBarTitleText": "在线预约",
+  "usingComponents": {
+    "i-button": "../../../static/dist/button/index",
+    "i-card": "../../../static/dist/card/index",
+    "i-panel": "../../../static/dist/panel/index",
+    "i-grid": "../../../static/dist/grid/index",
+    "i-grid-item": "../../../static/dist/grid-item/index",
+    "i-grid-icon": "../../../static/dist/grid-icon/index",
+    "i-grid-label": "../../../static/dist/grid-label/index",
+    "i-notice-bar": "../../../static/dist/notice-bar/index",
+    "i-avatar": "../../../static/dist/avatar/index",
+    "i-cell-group": "../../../static/dist/cell-group/index",
+    "i-cell": "../../../static/dist/cell/index",
+    "i-row": "../../../static/dist/row/index",
+     "i-col": "../../../static/dist/col/index",
+     "i-icon": "../../../static/dist/icon/index",
+     "i-input": "../../../static/dist/input/index",
+     "i-message": "../../../static/dist/message/index",
+     "i-tabs": "../../../static/dist/tabs/index",
+     "i-tab": "../../../static/dist/tab/index"
+}
+}
