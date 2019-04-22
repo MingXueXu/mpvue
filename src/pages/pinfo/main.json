@@ -19,5 +19,6 @@
      "i-message": "../../../static/dist/message/index",
      "i-tabs": "../../../static/dist/tabs/index",
      "i-tab": "../../../static/dist/tab/index"
+     
 }
 }

@@ -1,19 +1,24 @@
 <template>
 <div>
- <i-panel title="基础用法">
-    <i-input :value="value1" title="收货人" autofocus placeholder="名字" />
-    <i-input :value="value2" type="number" title="联系电话" placeholder="请输入手机号" />
-    <i-input :value="value3 " type="textarea" title="详细地址" placeholder="请输入详细地址(最多50字)" maxlength="50" />
-    <i-input :value="value4" title="用户信息" disabled />
+ <i-panel title="读者基本信息">
+    <i-input :value="value1" title="姓名" autofocus placeholder="请输入名字" />
+    <i-input :value="value2" type="number" title="学号" placeholder="请输入学号" />
+    <i-input :value="value3 " title="年级专业" placeholder="请输入你的年级和专业" />
 </i-panel>
 
-<i-panel title="无标题输入框">
-    <i-input :value="value5" placeholder="请输入收货人姓名" />
+<i-panel title="个性标签">
+    <i-input :value="value5" placeholder="一句话描述自己" />
 </i-panel>
 
-<i-panel title="圆角输入框">
-    <i-input :value=" value6 " type="number" right title="消费总额" mode="wrapped" placeholder="询问收银员后输入" />
-    <i-input :value=" value7 " type="number" right error title="不参与优惠金额" mode="wrapped" placeholder="询问收银员后输入" />
+<i-panel title="用户修改">
+  <i-input :value="value1" title="姓名" autofocus placeholder="请输入名字" />
+    <i-input :value="value2" type="number" title="学号" placeholder="请输入学号" />
+    <i-input :value="value3 " title="年级专业" placeholder="请输入你的年级和专业" />
+    <i-input :value="value2" type="password" title="密码" placeholder="请输入新密码" />
+</i-panel>
+<i-panel>
+  <i-button type="error" inline i-class="ButCs">确认修改</i-button>
+   <i-button type="success" inline i-class="ButCs">取消修改</i-button>
 </i-panel>
 </div>
 </template>
@@ -52,5 +57,7 @@ export default {
 </script>
 
 <style>
-
+.ButCs{
+  margin:100px
+}
 </style>

@@ -18,6 +18,7 @@
      "i-input": "../../../static/dist/input/index",
      "i-message": "../../../static/dist/message/index",
      "i-tabs": "../../../static/dist/tabs/index",
-     "i-tab": "../../../static/dist/tab/index"
+     "i-tab": "../../../static/dist/tab/index",
+     "i-input-number": "../../../static/dist/input-number/index"
 }
 }

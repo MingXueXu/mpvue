@@ -2,8 +2,8 @@
   <div>
     <i-panel>
     <i-cell-group>
-    <i-cell title="个人信息修改" is-link url="/src/pages/pinfo/index"></i-cell>
-    <i-cell title="在线借阅信息" is-link url="/src/pages/index/index"></i-cell>
+    <i-cell title="个人信息修改" is-link url="/pages/pinfo/main"></i-cell>
+    <i-cell title="在线借阅信息" is-link url="/pages/rinfo/main"></i-cell>
 </i-cell-group>
     </i-panel>
     <i-panel title="信息推送设置">

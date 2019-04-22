@@ -3,7 +3,9 @@
     "pages/index/main",
     "pages/order/main",
     "pages/set/main",
-    "pages/mine/main"
+    "pages/mine/main",
+    "pages/pinfo/main",
+    "pages/rinfo/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
