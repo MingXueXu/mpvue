@@ -1,10 +1,10 @@
 <template>
 <div>
  <i-panel title="借阅书籍信息">
-    <i-input :value="value1" title="书籍名称" autofocus placeholder="请输入书籍名称" />
-    <i-input-number value="value1" min="0" max="100" bindchange="handleChange1" />
-    <i-input :value="value3 " title="借书日期" placeholder="请输入时间" />
-    <i-input :value="value3 " title="还书日期" placeholder="请输入时间" />
+    <i-input  title="书籍名称" autofocus placeholder="请输入书籍名称" i-class ="Icolor"/>
+    <i-input-number :value="value1" min="0" max="100" bind:change="handleChange1" />
+    <i-input :value="value3 " title="借书日期" placeholder="请输入时间" i-class ="Icolor" />
+    <i-input :value="value3 " title="还书日期" placeholder="请输入时间" i-class ="Icolor"/>
 </i-panel>
    <i-button type="success" inline i-class="ButCs">确认</i-button>
 </div>
@@ -26,10 +26,10 @@ export default {
   }
   },
   methods:{
-       handleChange (detail) {
+       handleChange1 (detail) {
         this.setData({
-            current: detail.key
-        });
+            value1: detail.value
+        })
     },
   },
   created () {
@@ -38,6 +38,11 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+div>>>.Icolor{
+  border-color: #dddee1;
+  height: 10px;
+  border-style:solid;
+  border-width: 0.1ch
+}
 </style>

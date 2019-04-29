@@ -22,10 +22,9 @@ export default {
   }
   },
   methods:{
-       handleChange (detail) {
-        this.setData({
-            current: detail.key
-        });
+       handleChange (event) {
+         console.log(event.mp.detail.key)
+            this.current=event.mp.detail.key
     },
   },
   created () {
