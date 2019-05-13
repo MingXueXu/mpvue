@@ -4,24 +4,68 @@
     <i-tab key="tab1" title="书籍预约" ></i-tab>
     <i-tab key="tab2" title="自习室预约"></i-tab>
 </i-tabs>
-<div v-show="Show1">
-<i-card title="卡片标题" extra="额外内容" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
-    <view slot="content">内容不错</view>
-    <view slot="footer">尾部内容</view>
+<div v-show="Show2">
+<i-card title="3楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
 </i-card>
-<i-card title="卡片标题" extra="额外内容" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class2.png">
-    <view slot="content">内容不错</view>
-    <view slot="footer">尾部内容</view>
+<i-card title="3楼" extra="自习区" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class2.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">20个</view>
+</i-card>
+<i-card title="4楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">70个</view>
+</i-card>
+<i-card title="4楼" extra="自习区" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class2.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">20个</view>
+</i-card>
+<i-card title="5楼" extra="机房" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/电脑.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="6楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="7楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="8楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="9楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="10楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
+</i-card>
+<i-card title="11楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
+    <view slot="content">剩余位置</view>
+    <view slot="footer">50个</view>
 </i-card>
 </div>
-<div v-show="Show2">
-<i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-    <view slot="content">内容不错</view>
-    <view slot="footer">尾部内容</view>
+<div v-show="Show1">
+<i-card title="围城" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+    <view slot="content">可借本数</view>
+    <view slot="footer">2本</view>
 </i-card>
-<i-card title="卡片标题" extra="额外内容" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
-    <view slot="content">内容不错</view>
-    <view slot="footer">尾部内容</view>
+<i-card title="我们仨" extra="11楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+    <view slot="content">可借本数</view>
+    <view slot="footer">3本</view>
+</i-card>
+<i-card title="西潮" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+    <view slot="content">可借本数</view>
+    <view slot="footer">2本</view>
+</i-card>
+<i-card title="人生" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
+    <view slot="content">可借本数</view>
+    <view slot="footer">2本</view>
 </i-card>
 </div>
 </div>

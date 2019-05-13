@@ -11,7 +11,7 @@
     <open-data type="userNickName"></open-data>
       </view>
     <i-row>
-    <i-col span="12" i-class="col-class"><i-card i-class="swidth" title="签到中心"></i-card></i-col>
+    <i-col span="12" i-class="col-class"><i-card i-class="swidth" :title="words" @click="handleSuccess"></i-card></i-col>
     <i-col span="12" i-class="col-class1 "><i-card i-class="swidth" title="当前等级:LV3"></i-card></i-col>
  </i-row>
     <i-grid i-class="no-border">
@@ -84,17 +84,17 @@
     <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
       <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
         <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
+        <view slot="footer">当当网</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
       <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
         <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
+        <view slot="footer">京都</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
      <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
         <view slot="content">内容不错</view>
-        <view slot="footer">尾部内容</view>
+        <view slot="footer">淘宝</view>
       </i-card></i-col>
 </i-row>
       </i-panel>
@@ -107,6 +107,7 @@ const { $Message } = require('../../../static/dist/base/index');
 export default {
   data () {
     return {
+      words:'点我签到',
       // girds:['我的书架','我的期刊','我的收藏','我的活动'],
       notice: '2019年4月3日',
       motto: 'Hello miniprograme',
@@ -134,11 +135,9 @@ export default {
       console.log('clickHandle:', ev)
       // throw {message: 'custom test'}
     },
-     handleSuccess () {
-        $Message({
-            content: '签到成功！',
-            type: 'success'
-        });
+    
+        handleSuccess () {
+      this.words="已签到"
     },
   },
 
