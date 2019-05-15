@@ -37,7 +37,7 @@
         <i-grid-icon>
             <image src="/static/grid/活动.png" />
         </i-grid-icon>
-        <i-grid-label>我的活动</i-grid-label>
+        <i-grid-label @click="go()">我的活动</i-grid-label>
     </i-grid-item>
 </i-grid>
 <i-panel title="每日排行">
@@ -139,6 +139,11 @@ export default {
         handleSuccess () {
       this.words="已签到"
     },
+    go(){
+      mpvue.navigateTo({
+        url:'/pages/myacti/main'
+      });
+    }
   },
 
   created () {
