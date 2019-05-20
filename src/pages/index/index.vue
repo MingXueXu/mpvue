@@ -19,7 +19,7 @@
         <i-grid-icon>
             <image src="/static/grid/1.png" />
         </i-grid-icon>
-        <i-grid-label>我的书架</i-grid-label>
+        <i-grid-label @click="gost()">我的书架</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -142,6 +142,11 @@ export default {
     go(){
       mpvue.navigateTo({
         url:'/pages/myacti/main'
+      });
+    },
+    gost(){
+ mpvue.navigateTo({
+        url:'/pages/mysto/main'
       });
     }
   },

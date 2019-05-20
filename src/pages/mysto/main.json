@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "我的活动",
+  "navigationBarTitleText": "我的书架",
   "usingComponents": {
     "i-button": "../../../static/dist/button/index",
     "i-card": "../../../static/dist/card/index",
@@ -20,8 +20,6 @@
      "i-tabs": "../../../static/dist/tabs/index",
      "i-tab": "../../../static/dist/tab/index",
      "i-input-number": "../../../static/dist/input-number/index",
-     "i-divider": "../../../static/dist/divider/index",
-     "i-collapse": "../../../static/dist/collapse/index",
-     "i-collapse-item": "../../../static/dist/collapse-item/index"
+     "i-divider": "../../../static/dist/divider/index"
 }
 }
