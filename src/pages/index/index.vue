@@ -6,7 +6,7 @@
     <i-input type="text" title="搜索" placeholder="请输入书籍名称 关键字" i-class ="Icolor"/>
     <view class="userinfo">
   <view class="userinfo-avatar">
-    <open-data type="userAvatarUrl"></open-data>
+    <open-data  @click="go()" type="userAvatarUrl"></open-data>
     </view>
     <open-data type="userNickName"></open-data>
       </view>
@@ -25,13 +25,13 @@
         <i-grid-icon>
             <image src="/static/grid/2.png" />
         </i-grid-icon>
-        <i-grid-label>我的期刊</i-grid-label>
+        <i-grid-label @click="goqk()">我的期刊</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
             <image src="/static/grid/3.png" />
         </i-grid-icon>
-        <i-grid-label>我的收藏</i-grid-label>
+        <i-grid-label @click="gosc()">我的收藏</i-grid-label>
     </i-grid-item>
     <i-grid-item i-class="no-border">
         <i-grid-icon>
@@ -147,6 +147,16 @@ export default {
     gost(){
  mpvue.navigateTo({
         url:'/pages/mysto/main'
+      });
+    },
+    goqk(){
+ mpvue.navigateTo({
+        url:'/pages/mypap/main'
+      });
+    },
+     gosc(){
+ mpvue.navigateTo({
+        url:'/pages/mycol/main'
       });
     }
   },

@@ -21,5 +21,6 @@
      "i-tab": "../../../static/dist/tab/index",
      "i-input-number": "../../../static/dist/input-number/index",
      "i-divider": "../../../static/dist/divider/index"
+    
 }
 }
