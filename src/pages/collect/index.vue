@@ -1,15 +1,15 @@
 <template>
 <div>
- <div>
+ 
     <i-panel title="我的收藏">
       <view>
-        <i-card i-class="split" v-for="item in recommand" :key="item" :extra="item.name" :thumb="item.img">
+        <i-card i-class="split" v-for="item in list" :key="item" :extra="item.type" :thumb="item.img">
             <view slot="content">{{item.content}}</view>
             <view slot="footer">{{item.time}}</view>
         </i-card>
       </view>
     </i-panel>
-  </div>
+
 </div>
 </template>
 
@@ -24,15 +24,13 @@ export default {
 
   data () {
     return {
-      recommand: []
+     list: []
     }
   },
-
-  onLoad (option){
-    console.log(option.type)
-    this.recommand = require('@/collect/' + option.type + '.json')
-  },
-
+onLoad(item){
+this.list=require('@/data/'+item.type+'.json')
+ console.log(this.list)
+},
   created () {
     
   }

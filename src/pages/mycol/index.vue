@@ -1,13 +1,13 @@
 <template>
 <div>
 <i-grid i-class="no-border">
-      <i-grid-item @click="goList(item.url)" i-class="no-border" v-for="item in grids" :key="item">
+      <i-grid-item @click="goType(item)" i-class="no-border" v-for="item in grids" :key="item">
           <i-grid-label>{{item.type}}</i-grid-label>
       </i-grid-item>
   </i-grid>
   <i-panel title="我的收藏">
     <view>
-      <i-card @click="goType(item.type)" i-class="split" v-for="item in recommand" :key="item" :extra="item.name" :thumb="item.img">
+      <i-card i-class="split" v-for="item in top" :key="item" :extra="item.type" :thumb="item.img">
           <view slot="content">{{item.content}}</view>
           <view slot="footer">{{item.time}}</view>
       </i-card>
@@ -28,26 +28,29 @@ export default {
   data () {
     return {
       grids: [
-        {type:'图片与视频',"url":'../collect/main?type=1'},
-        {type:'链接',"url":'../collect/main?type=2'},
-        {type:'音乐',"url":'../collect/main?type=3'},
-        {type:'笔记',"url":'../collect/main?type=4'},
-        {type:'位置',"url":'../collect/main?type=5'}
+        {type:'图片与视频'},
+        {type:'链接'},
+        {type:'音乐'},
+        {type:'笔记'},
+        {type:'位置'}
       ],
-      recommand: top
+      top:[
+        {type:"中国电化教育",content:"个性化学习",time:"9天前"}
+      ],
+    
     }
   },
 
   components: {
     card
   },
-
+   
   methods: {
-    goList (url) {
-      mpvue.navigateTo({ url })
-    },
+    // goList (url) {
+    //   mpvue.navigateTo({ url })
+    // },
     goType (type) {
-      let url = '../collect/main?type=' + type
+      let url = '../collect/main?type=' + type.type
       mpvue.navigateTo({ url })
     }
   },

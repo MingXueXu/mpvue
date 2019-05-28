@@ -1,5 +1,5 @@
 {
-  "navigationBarTitleText": "在线预约",
+  "navigationBarTitleText": "详情列表",
   "usingComponents": {
     "i-button": "../../../static/dist/button/index",
     "i-card": "../../../static/dist/card/index",
