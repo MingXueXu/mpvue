@@ -44,17 +44,17 @@
   <i-row>
     <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
       <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 女孩 (1).png">
-        <view slot="content">snow</view>
+        <view slot="content">Snow</view>
         <view slot="footer">NO.1</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
       <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 女孩.png">
-        <view slot="content">snow</view>
+        <view slot="content">Tia</view>
         <view slot="footer">NO.2</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
       <i-card  i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/头像 男孩.png">
-        <view slot="content">snow</view>
+        <view slot="content">Yveete</view>
         <view slot="footer">NO.3</view>
       </i-card></i-col>
 </i-row>
@@ -83,17 +83,17 @@
         <i-row>
     <i-col span="8" i-class="col-class">  <view class="top-padding"></view>
       <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
-        <view slot="content">内容不错</view>
+        <view slot="content">明朝那些事</view>
         <view slot="footer">当当网</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
       <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
-        <view slot="content">内容不错</view>
+        <view slot="content">围城</view>
         <view slot="footer">京都</view>
       </i-card></i-col>
     <i-col span="8" i-class="col-class"><view class="top-padding"></view>
      <i-card i-class="top-padding" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
-        <view slot="content">内容不错</view>
+        <view slot="content">追风筝的人</view>
         <view slot="footer">淘宝</view>
       </i-card></i-col>
 </i-row>

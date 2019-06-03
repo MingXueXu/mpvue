@@ -7,7 +7,7 @@
 <div v-show="Show1">
 <i-card title="3楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small" i-class="size">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -269,5 +269,8 @@ export default {
 </script>
 
 <style>
-
+.size{
+    height: 5px ;
+    widows: 5px;
+}
 </style>

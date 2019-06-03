@@ -28,14 +28,18 @@ export default {
   data () {
     return {
       grids: [
-        {type:'图片与视频'},
+        {type:'图片'},
         {type:'链接'},
         {type:'音乐'},
         {type:'笔记'},
         {type:'位置'}
       ],
       top:[
-        {type:"中国电化教育",content:"个性化学习",time:"9天前"}
+        {type:"图片",content:"一张图片",time:"10天前"},
+        {type:"链接",content:"一个链接",time:"10天前"},
+        {type:"音乐",content:"一首音乐",time:"10天前"},
+        {type:"笔记",content:"一本笔记",time:"10天前"},
+        {type:"位置",content:"一个位置",time:"10天前"},
       ],
     
     }
@@ -63,50 +67,5 @@ export default {
 <style scoped>
 div >>> .no-border {
   border-width: 0pt;
-}
-div >>> .top-padding {
-  width:200rpx;
-  float: left;
-
-}
-.userinfo {
-position: relative;
-width: 700rpx;
-height: 200rpx;
-color: #666;
-display: flex;
-flex-direction: column;
-align-items: center;
-}
- 
-.userinfo-avatar {
-overflow:hidden;
-display: block;
-width: 120rpx;
-height: 120rpx;
-margin: 10rpx;
-/* margin-top: 50rpx; */
-border-radius: 50%;
-border: 2px solid #fff;
-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-}
-div>>>.col-class{
-  padding-right: 0pt;
-  float: left;
-  
-}
-div>>>,col-class1{
-   float: right;
-}
-div>>>.swidth{
-  width:155px;
-  height:35px;
-  background-color: #FFFAF0
-}
-div>>>.Icolor{
-  border-color: #dddee1;
-  height: 10px;
-  border-style:solid;
-  border-width: 0.1ch
 }
 </style>
