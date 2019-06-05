@@ -7,7 +7,7 @@
 <div v-show="Show1">
 <i-card title="3楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small" i-class="size">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" inline size="small" i-class="buttonCS">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -16,12 +16,12 @@
     <i-input  title="进入时间" placeholder="请输入时间" i-class ="Icolor" />
     <i-input  title="离开时间" placeholder="请输入时间" i-class ="Icolor"/>
 </i-panel>
-        <i-button @click="toggleLeft2" type="primary" size="small">确定</i-button>
+        <i-button @click="toggleLeft2" type="primary" size="small" i-class="buttonCS">确定</i-button>
     </view>
 </i-drawer>
 <i-card title="3楼" extra="自习区" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class2.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">20个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">20个<i-button @click="toggleLeft2" type="primary" size="small" i-class="buttonCS">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -35,7 +35,7 @@
 </i-drawer>
 <i-card title="4楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">70个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">70个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -49,7 +49,7 @@
 </i-drawer>
 <i-card title="4楼" extra="自习区" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class2.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">20个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">20个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -63,7 +63,7 @@
 </i-drawer>
 <i-card title="5楼" extra="机房" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/电脑.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -77,7 +77,7 @@
 </i-drawer>
 <i-card title="6楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -91,7 +91,7 @@
 </i-drawer>
 <i-card title="7楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -105,7 +105,7 @@
 </i-drawer>
 <i-card title="8楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" size="small" i-class="buttonCS">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -119,7 +119,7 @@
 </i-drawer>
 <i-card title="9楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -133,7 +133,7 @@
 </i-drawer>
 <i-card title="10楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -147,7 +147,7 @@
 </i-drawer>
 <i-card title="11楼" extra="阅览室" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/class1.png">
     <view slot="content">剩余位置</view>
-    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">50个<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -163,7 +163,7 @@
 <div v-show="Show2">
 <i-card title="围城" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
     <view slot="content">可借本数</view>
-    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -177,7 +177,7 @@
 </i-drawer>
 <i-card title="我们仨" extra="11楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
     <view slot="content">可借本数</view>
-    <view slot="footer">3本<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">3本<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -191,7 +191,7 @@
 </i-drawer>
 <i-card title="西潮" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
     <view slot="content">可借本数</view>
-    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -205,7 +205,7 @@
 </i-drawer>
 <i-card title="人生" extra="7楼" thumb="cloud://ev-sonw-389539.6576-ev-sonw-389539/书本 (1).png">
     <view slot="content">可借本数</view>
-    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" shape="circle" size="small">预约</i-button></view>
+    <view slot="footer">2本<i-button @click="toggleLeft2" type="primary" i-class="buttonCS" size="small">预约</i-button></view>
 </i-card>
 <i-drawer mode="left" :visible="showLeft2" mask-closable="false">
     <view class="demo-container">
@@ -268,9 +268,10 @@ export default {
 }
 </script>
 
-<style>
-.size{
-    height: 5px ;
-    widows: 5px;
+<style scoped>
+div>>>.buttonCS{
+    height: 50px;
+    width:100px;
+    margin-left:200px;
 }
 </style>
